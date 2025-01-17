@@ -1,4 +1,8 @@
-# buzzline-01-case
+# buzzline-01-valjohnson
+
+# Git Hub https://github.com/Valpal84
+# Repository for this project: https://github.com/Valpal84/buzzline-01-valjohnson
+
 
 This project introduces streaming data. 
 The Python language includes generators - we'll use this feature to generate some streaming buzzline messages. 
@@ -67,13 +71,13 @@ Windows PowerShell:
 
 ```shell
 .venv\Scripts\activate
-py -m producers.basic_producer_case
+py -m producers.basic_producer_valjohnson.py
 ```
 
 Mac/Linux:
 ```zsh
 source .venv/bin/activate
-python3 -m producers.basic_producer_case
+python3 -m producers.basic_producer_valjohnson.py
 ```
 
 ## Task 5. Monitor an Active Log File (Terminal 2)
@@ -87,13 +91,13 @@ Use the commands below to activate .venv, and run the file as a module.
 Windows:
 ```shell
 .venv\Scripts\activate
-py -m consumers.basic_consumer_case.py
+py -m consumers.basic_consumer_valjohnson.py
 ```
 
 Mac/Linux:
 ```zsh
 source .venv/bin/activate
-python3 -m consumers.basic_consumer_case.py
+python3 -m consumers.basic_consumer_valjohnson.py
 ```
 
 ## Save Space
