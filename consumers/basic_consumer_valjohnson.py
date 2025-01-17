@@ -57,6 +57,12 @@ def process_message(log_file) -> None:
                 logger.warning(f"ALERT: The special message was found! \n{message}")
 
 
+            # trigger a warning if the words 'scary' and 'movie' appear togethe in the message
+            if "scary" in message.lower() and "movie" in message.lower():
+                print(f"WARNING: The words 'scary' and 'movie' appeared together! \n{message}")
+                logger.warning(f"WARNING: The words 'scary' and 'movie' appeared together! \n{message}")
+
+
 #####################################
 # Define main function for this script.
 #####################################
