@@ -48,7 +48,7 @@ def get_message_interval() -> int:
     To use handy functions like this, import the os module 
     from the Python Standard Library (see above).
     """
-    return_value: str = os.getenv("MESSAGE_INTERVAL_SECONDS", 3)
+    return_value: str = os.getenv("MESSAGE_INTERVAL_SECONDS", 5)
     interval: int = int(return_value)
     logger.info(f"Messages will be sent every {interval} seconds.")
     return interval
@@ -59,9 +59,9 @@ def get_message_interval() -> int:
 #####################################
 
 # Define some lists for generating buzz messages
-ADJECTIVES: list = ["amazing", "funny", "boring", "exciting", "weird"]
-ACTIONS: list = ["found", "saw", "tried", "shared", "loved"]
-TOPICS: list = ["a movie", "a meme", "an app", "a trick", "a story"]
+ADJECTIVES: list = ["amazing", "funny", "boring", "exciting", "weird", "crazy", "scary"]
+ACTIONS: list = ["found", "saw", "tried", "shared", "loved", "listen", "cook", "laugh"]
+TOPICS: list = ["a movie", "a meme", "an app", "a trick", "a story", " a game", " a plan", "a sport"]
 
 #####################################
 # Define a function to generate buzz messages
